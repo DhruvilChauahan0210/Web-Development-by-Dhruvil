@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    font-family: fantasy;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#b{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    height: 10vh;
+    width: 80vh;
+    border: 3px solid black;
+    overflow: hidden;
+    cursor:pointer;
+    box-shadow: 5vh 5vh black;
+    transition: 0.5s ease;
+    
+}
+#b h1{
+    font-size: 20vh;
+    transition: 0.5s;
+}
+#b:hover{
+    box-shadow: 0 0 ;
+}
