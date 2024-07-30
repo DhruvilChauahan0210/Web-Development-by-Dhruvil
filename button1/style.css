@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    font-family: fantasy;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#b{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    height: 10vh;
+    width: 80vh;
+    border: 3px solid black;
+    overflow: hidden;
+    cursor:pointer
+    
+}
+#b h1{
+    font-size: 20vh;
+    transition: 0.5s;
+}
+#circle{
+    top: 100vh;
+    position: absolute;
+    height: 100vh;
+    width: 120vh;
+    border-radius: 100%;
+    background-color: black;
+    transition: 0.5s;
+}
+#b:hover{
+    color: white;
+}
+#b:hover h1{
+    z-index: 2;
+}
+#b:hover #circle{
+    top:-45vh;
+}
