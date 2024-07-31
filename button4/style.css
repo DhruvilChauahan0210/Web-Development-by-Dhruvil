@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buttonDiv{
+    position: relative;height: fit-content;
+    width: fit-content;
+}
+#button{
+    /* z-index: 2; */
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 60vh;
+    background-image: linear-gradient(90deg,#F9BB00,#FA880C);
+    border: 1vh solid black;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+#button h1{
+    font-size:10vh;
+    font-weight: 800;
+}
+#button-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 60vh;
+    background-image: linear-gradient(90deg,#F9BB00,#FA880C);
+    border: 1vh solid black;
+    border-radius: 100px;
+    z-index: -1;
+    transition: 0.3s ease;
+    /* opacity: 0; */
+}
+#buttonDiv:hover #button-shadow{
+    top:5vh;
+    left:4vh;
+    /* opacity: 1; */
+}
+#buttonDiv:hover #button{
+    scale: 1.5;
+    transform: skew(-11deg,8deg);
+}
+#buttonDiv:hover #button-shadow{
+    scale: 1.5;
+    transform: skew(-11deg,8deg);
+}
