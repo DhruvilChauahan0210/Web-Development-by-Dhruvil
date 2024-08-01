@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+    font-weight: 900;
+    
+}
+#buttonDiv{
+    position: relative;height: fit-content;
+    width: fit-content;
+    /* overflow: hidden; */
+}
+#button{
+    /* z-index: 2; */
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 60vh;
+    background-image: linear-gradient(90deg,#F9BB00,#FA880C);
+    border: 1vh solid black;
+    border-radius: 100px;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+#button h1{
+    font-size:10vh;
+    font-weight: 800;
+}
+#button-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 60vh;
+    background-image: linear-gradient(90deg,#F9BB00,#FA880C);
+    border: 1vh solid black;
+    border-radius: 100px;
+    z-index: -1;
+    transition: 0.3s ease;
+    /* opacity: 0; */
+}
+#buttonDiv:hover #button-shadow{
+    top:5vh;
+    left:-4vh;
+    /* opacity: 1; */
+}
+#buttonDiv:hover #button{
+    scale: 1.5;
+    transform: skew(11deg,-8deg);
+}
+#buttonDiv:hover #button-shadow{
+    scale: 1.5;
+    transform: skew(11deg,-8deg);
+}
+#buttonDiv:hover #shining{
+    left: 100vh;
+    scale: 1.5;
+    transform: skew(11deg,-8deg);
+    
+}
+#shining{
+    position: absolute;
+    height: 40vh;
+    width: 10vh;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: -10vh;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+#buttonDiv:hover #s1 i{
+    font-size: 14vh;
+    top:-20vh;
+    left: -10vh;
+    transform: skew(11deg,-8deg);
+}
+#buttonDiv:hover #s2 i{
+    font-size: 8vh;
+    top:12vh;
+    left: -10vh;
+    color: white;
+    transform: skew(11deg,-8deg);
+}
+#buttonDiv:hover #s3 i{
+    font-size: 12vh;
+    top:-8vh;
+    left: 55vh;
+    color: white;
+    
+    transform: skew(11deg,-8deg);
+}
+#buttonDiv:hover #s4 i{
+    font-size: 9vh;
+    top:20vh;
+    left: 70vh;
+    transform: skew(11deg,-8deg);
+}
+#s1 i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 4;
+    /* background-color: red; */
+    font-size: 0vh;
+    transition: 0.3s ease-in-out;
+    animation: star 2s linear infinite ;
+}
+@keyframes star{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+#s2 i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 4;
+    /* background-color: red; */
+    font-size: 0vh;
+    transition: 0.3s ease-in-out;
+    animation: star 2s linear infinite ;
+}
+#s3 i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 4;
+    /* background-color: red; */
+    font-size: 0vh;
+    transition: 0.3s ease-in-out;
+    animation: star 2s linear infinite ;
+}
+#s4 i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 4;
+    /* background-color: red; */
+    font-size: 0vh;
+    transition: 0.3s ease-in-out;
+    animation: star 2s linear infinite ;
+}
