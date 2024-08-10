@@ -1,0 +1,228 @@
+@font-face {
+    font-family: bold;
+    src: url("./AvenirNextCyr-Bold.woff");
+}
+@font-face {
+    font-family: semi;
+    src: url("./HK-Gothic-SemiBold.woff");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+html, body {
+    top:0;
+    left:0;
+    margin: 0;
+    list-style: none;   
+}
+#cursor {
+    top:0;
+    position: fixed;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 100%;
+    background-color: blue;
+    /* z-index: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#nav{
+    height: 13vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    /* gap: 10vh; */
+    /* z-index: 2; */
+    
+    
+}
+#part1{
+    position: relative;
+    /* background-color: lightblue; */
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    
+}
+#h1overlay{
+    background-color: rgba(255, 0, 0, 0);
+    height: 8vh;
+    width: 30vh;
+    position: fixed;
+    /* z-index: 99; */
+}
+#part1 h1{
+    font-size:8.2vh;
+    font-family: bold;
+    padding-left: 2.5vh;
+    color: #BE1E17;
+    position: fixed;
+    z-index: 1;
+}
+#part1 h3{
+    font-size:3.2vh;
+    font-family: semi;
+    margin-top: 3.5vh;
+    padding-left: 32vh;
+    
+}
+#part2{
+    position: relative;
+    /* background-color: lightblue; */
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 65vh;
+    padding-right: 14vh;
+    padding-bottom: 5vh;
+    
+}
+
+#part2 #navItem{
+    position: relative;
+    height: 4vh;
+    width: 7vh;
+    
+}
+#part2 #itemsLI{
+    position: absolute;
+    background-color: #BE1E17;
+    color: snow;
+    height: 4vh;
+    width: 7vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding-left: 0.5vh;
+    transition:  all 0.5s ease-out;
+    
+}
+#part2 #itemsIG{
+    position: absolute;
+    background-color: #FFDDDD;
+    color: #6B22FA;
+    height: 4vh;
+    width: 7vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding-left: 0.5vh;
+    transition:  all 0.5s ease-out;
+    
+}
+#part2 #itemsYT{
+    position: absolute;
+    background-color: #11694B;
+    color: #FFDDDD;
+    height: 4vh;
+    width: 7vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding-left: 0.5vh;
+    transition:  all 0.5s ease-out;
+    
+}
+#part2 #itemsTIK{
+    position: absolute;
+    background-color: #FFCB30;
+    color: #6B22FA;
+    height: 4vh;
+    width: 7vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding-left: 0.5vh;
+    transition:  all 0.5s ease-out;
+    
+}
+#part2 #navItem #navshadow{
+    position: absolute;
+    /* z-index: 8; */
+    height: 4vh;
+    width: 7vh;
+    background-color: black;
+    left: 1.5vh;
+    top: 1vh;
+}
+#part2 #navItem h4{
+    
+    font-size: 3vh;
+    font-family: bold;
+}
+#part2 #navItem:hover #itemsLI{
+    left: 1.5vh;
+    top: 1vh;
+}
+#part2 #navItem:hover #itemsYT{
+    left: 1.5vh;
+    top: 1vh;
+}
+#part2 #navItem:hover #itemsIG{
+    left: 1.5vh;
+    top: 1vh;
+}
+#part2 #navItem:hover #itemsTIK{
+    left: 1.5vh;
+    top: 1vh;
+}
+#part2 #navMenu{
+    position: fixed;
+    right: 7vh;
+    top: 2vh;
+    height: 5.3vh;
+    width: 7vh;    
+
+    
+}
+#part2 #navMenu #menu{
+    position: absolute;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 2;
+    font-size: 5.5vh;
+    font-weight: 200;
+    font-family: bold;
+    
+    height: 6.3vh;
+    width: 8vh;  
+}
+#part2 #navMenu #menushadow{
+    position: absolute;
+    height: 6.3vh;
+    width: 8vh; 
+    background-color:black;
+    left: 3vh;
+    top: 2vh;
+    
+}
+#part2 #navMenu:hover #menu{
+    left: 3vh;
+    top: 2vh;
+}
+#sec1{
+    
+    height: 100Vh;
+    width: 100%;
+    background: white;
+}
+#sec2{
+    height: 100Vh;
+    width: 100%;
+    background-color: lightskyblue;
+}

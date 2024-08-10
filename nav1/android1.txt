@@ -1,0 +1,8 @@
+Linear layout
+TextView to print text
+EditText take input from user
+Button for button 
+
+<--first app 
+TextView display text of any text after that 
+
