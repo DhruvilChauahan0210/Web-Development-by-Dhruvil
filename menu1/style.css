@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+.button {
+    background: rgba(255, 255, 255, 0.308);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.6;
+    scale: 0.7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.175s;
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: #8f44fd;
+  }
+  .burger-5 {
+    scale: 1.3;
+    height: 34px;
+  }
+  .burger-5 svg {
+    /* The size of the SVG defines the overall size */
+    height: 36px;
+    transform: translate(-1px, -1px);
+    /* Define the transition for transforming the SVG */
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .burger-5 .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .burger-5 .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  .is-closed.burger-5 svg {
+    transform: rotate(-45deg) translate(0);
+  }
+  .is-closed.burger-5 svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
